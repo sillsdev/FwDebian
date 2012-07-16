@@ -1,3 +1,9 @@
+fieldworks (7.0.6~beta7) oneiric; urgency=low
+
+  * Perforce changes (@37967)
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Fri, 27 Apr 2012 15:14:16 -0600
+
 fieldworks (7.0.6~beta6) oneiric; urgency=low
 
   * Perforce changes (@36987)
