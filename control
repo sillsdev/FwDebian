@@ -82,9 +82,9 @@ Package: fieldworks
 Architecture: all
 Depends:
  ${misc:Depends},
- fieldworks-applications,
- fieldworks-examples,
- fieldworks-movies
+ fieldworks-applications (>= ${binary:Version}),
+ fieldworks-examples (>= ${binary:Version}),
+ fieldworks-movies (>= 7.0)
 Description: A suite of programs to manage language and cultural data
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
