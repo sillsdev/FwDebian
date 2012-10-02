@@ -1,0 +1,13 @@
+Stage 1:
+ * Finish library dependencies fixes
+
+Stage 2:
+ * Review licensing in libcom
+ * Split up package
+ * Move debian dir into fieldworks dir
+ * Make an independent libcom package
+
+Stage 3:
+ * Allow CFLAGS/CXXFLAGS to be supplied externally
+ * Restrict symbol visibility in libcom
+ * Remove BasicTypes and WinError from libcom

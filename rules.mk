@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/makefile.mk
+
+DEB_SRCDIR = $(CURDIR)/FW_7.0
+
+DEB_BUILD_OPTIONS = nocheck
+DEB_MAKE_EXTRA_ARGS = BUILD_TYPE=r BUILD_CONFIG=Release
+
+DEB_MAKE_BUILD_TARGET   = Fw-build-package
+DEB_MAKE_INSTALL_TARGET = install-package DESTDIR=$(DEB_DESTDIR)
+
+DEB_SHLIBDEPS_INCLUDE = /usr/lib/fieldworks
+DEB_DH_MAKESHLIBS_ARGS_ALL = -X/usr/lib/fieldworks/
+DEB_DH_STRIP_ARGS = -k

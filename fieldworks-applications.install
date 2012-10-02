@@ -1,0 +1,5 @@
+/usr/{bin,lib}
+/usr/share/{applications,pixmaps}
+/usr/share/fieldworks
+/usr/share/SIL
+/var

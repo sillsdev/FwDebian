@@ -1,0 +1,13 @@
+/fieldworks/
+/fieldworks-movies/
+/fieldworks-examples/
+/fieldworks-all/
+/tmp/
+
+/stamp-makefile-build
+/stamp-makefile-install
+/files
+
+*.debhelper
+*.debhelper.log
+*.substvars

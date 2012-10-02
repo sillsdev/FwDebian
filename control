@@ -1,0 +1,94 @@
+Source: fieldworks
+Section: x11
+Priority: extra
+Maintainer: Neil Mayhew <neil_mayhew@sil.org>
+Build-Depends:
+ cdbs, debhelper (>= 7.0.50~), autotools-dev,
+ pkg-config,
+ libtool, automake, autoconf,
+ desktop-file-utils,
+ gawk, unzip, tofrodos, python,
+ libgtkmm-2.4-dev, uuid-dev, libgraphite-dev,
+ xutils-dev,
+ happycoders-libsocket-dev,
+ fieldworks-mono, fieldworks-libgdiplus,
+ mono-devel,
+ libmono-winforms2.0-cil,
+ libmono-cairo2.0-cil, gtk-sharp2,
+ libenchant-dev,
+ libxklavier-dev
+Standards-Version: 3.9.1
+Homepage: http://fieldworks.sil.org/
+
+Package: fieldworks-movies
+Architecture: all
+Depends:
+ ${misc:Depends}
+Recommends:
+ fieldworks-applications
+Description: A suite of programs to manage language and cultural data - movies
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ This optional package contains the tutorial movies.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-examples
+Architecture: all
+Depends:
+ ${misc:Depends}
+Recommends:
+ fieldworks-applications
+Description: A suite of programs to manage language and cultural data - examples
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ This optional package contains the example projects.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-applications
+Architecture: any
+Depends:
+ ${shlibs:Depends}, ${misc:Depends},
+ zenity,
+ chmsee,
+ xulrunner-1.9.2,
+ happycoders-libsocket,
+ fieldworks-libgdiplus (>= 2.8),
+ fieldworks-mono (>= 2.8),
+ fieldworks-mono-basic (>= 2.8),
+ libglib2.0-cil (>= 2.12), libgtk2.0-cil (>= 2.12),
+ fonts-sil-charissil | ttf-sil-charis,
+ fonts-sil-doulossil | ttf-sil-doulos,
+ fonts-sil-galatiasil | ttf-sil-galatia,
+ fonts-sil-ezrasil | ttf-sil-ezra,
+ ttf-mscorefonts-installer
+Conflicts:
+ ttf-thai-tlwg (<= 1:0.4.13-4)
+Suggests:
+ fieldworks
+Description: A suite of programs to manage language and cultural data - applications
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ This required package contains the applications.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks
+Architecture: all
+Depends:
+ ${misc:Depends},
+ fieldworks-applications,
+ fieldworks-examples,
+ fieldworks-movies
+Description: A suite of programs to manage language and cultural data
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ This is a metapackage that installs both the required and the optional
+ parts of FieldWorks.
+ .
+ For further information, please visit http://fieldworks.sil.org/
