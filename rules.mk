@@ -3,7 +3,7 @@
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/makefile.mk
 
-DEB_SRCDIR = $(CURDIR)/FW_7.0
+DEB_SRCDIR = $(CURDIR)/fw
 
 DEB_BUILD_OPTIONS = nocheck
 DEB_MAKE_EXTRA_ARGS = BUILD_TYPE=r BUILD_CONFIG=Release
