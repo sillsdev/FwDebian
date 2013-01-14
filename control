@@ -57,10 +57,10 @@ Depends:
  chmsee,
  xulrunner-1.9.2,
  happycoders-libsocket,
- fieldworks-gtk-sharp2 (>= 2.12.10-1),
- fieldworks-libgdiplus (>= 2.10-2),
- fieldworks-mono (>= 2.10.4-2),
- fieldworks-mono-basic (>= 2.10-2),
+ fieldworks-gtk-sharp2 (>= 2.12.10-2),
+ fieldworks-libgdiplus (>= 2.10-3),
+ fieldworks-mono (>= 2.10.4-3),
+ fieldworks-mono-basic (>= 2.10-3),
  fonts-sil-charissil | ttf-sil-charis,
  fonts-sil-doulossil | ttf-sil-doulos,
  fonts-sil-galatiasil | ttf-sil-galatia,
@@ -83,7 +83,8 @@ Architecture: all
 Depends:
  ${misc:Depends},
  fieldworks-applications (>= ${binary:Version}),
- fieldworks-examples (>= ${binary:Version}),
+ fieldworks-examples (>= ${binary:Version})
+Recommends:
  fieldworks-movies (>= 7.0)
 Description: A suite of programs to manage language and cultural data
  FieldWorks is a suite of software tools to help language development teams

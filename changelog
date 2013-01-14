@@ -1,8 +1,11 @@
 fieldworks (7.0.6~rc1) precise; urgency=low
 
   * See git log linux/FieldWorks7.0.6-beta7..linux/FieldWorks7.0.6-rc1
+  * Update dependencies:
+    - Require the latest versions of mono packages
+    - Demote fieldworks-movies to "Recommends" in metapackage
 
- -- Neil Mayhew <neil_mayhew@sil.org>  Tue, 18 Dec 2012 13:16:39 -0700
+ -- Neil Mayhew <neil_mayhew@sil.org>  Mon, 14 Jan 2013 16:21:54 -0700
 
 fieldworks (7.0.6~beta7) oneiric; urgency=low
 
