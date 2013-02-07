@@ -1,3 +1,10 @@
+fieldworks (7.0.6~rc4.1) testing; urgency=low
+
+  * Fix build errors on quantal and raring
+  * See git log linux/FieldWorks7.0.6-rc4..linux/FieldWorks7.0.6-rc4.1
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Thu, 07 Feb 2013 10:55:56 -0700
+
 fieldworks (7.0.6~rc4) testing; urgency=low
 
   * See git log linux/FieldWorks7.0.6-rc3..linux/FieldWorks7.0.6-rc4
