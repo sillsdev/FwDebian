@@ -1,3 +1,10 @@
+fieldworks (7.3.2~alpha3) testing; urgency=low
+
+  * Switch to 7.3 source tree
+  * Tagged as linux/FieldWorks7.3.2-alpha3 in git
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Thu, 21 Feb 2013 21:07:52 -0700
+
 fieldworks (7.0.6~rc4.1) testing; urgency=low
 
   * Fix build errors on quantal and raring
