@@ -1,3 +1,9 @@
+fieldworks (7.3.2~alpha6) testing; urgency=low
+
+  * See git log linux/FieldWorks7.3.2-alpha5..linux/FieldWorks7.3.2-alpha6
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Fri, 08 Mar 2013 14:26:23 -0700
+
 fieldworks (7.3.2~alpha5) testing; urgency=low
 
   * See git log linux/FieldWorks7.3.2-alpha4..linux/FieldWorks7.3.2-alpha5
