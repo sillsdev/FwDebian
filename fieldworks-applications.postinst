@@ -26,8 +26,23 @@ case "$1" in
 		then
 			/usr/lib/fieldworks/cpol-action unpack || true
 		fi
-		mkdir -p /var/lib/fieldworks
-		chmod 1777 /var/lib/fieldworks
+
+		addgroup --system --quiet fieldworks 2>/dev/null
+
+		db_get fieldworks/users/group-list
+		for USER in $RET
+		do
+			adduser --quiet $USER fieldworks 2>/dev/null
+		done
+
+		VLF=/var/lib/fieldworks
+		mkdir -p $VLF
+		if [ $(stat -c %G $VLF) != fieldworks ]
+		then
+			chgrp -R fieldworks $VLF
+			chmod -R g+w $VLF
+			find $VLF -type d -print0 | xargs -0 chmod 2775
+		fi
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)

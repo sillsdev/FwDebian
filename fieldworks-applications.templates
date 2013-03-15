@@ -23,3 +23,19 @@ Type: boolean
 _Description: Accept the application and terms of the CPOL?
  Please indicate whether you wish to accept the terms of the CPOL
  for the parts of this package that are licensed under it.
+
+Template: fieldworks/users/group-list
+Type: string
+_Description: Add these users to the fieldworks group:
+ A group has been created for the fieldworks users
+ on this system, to enable the sharing of global
+ data such as writing system definitions.
+ .
+ Please specify the account names of the people who will be
+ using fieldworks. Separate the names with spaces.
+
+Template: fieldworks/users/group-activate
+Type: note
+_Description: Log out to activate the fieldworks group.
+ To activate the fieldworks group, all users must log out
+ and log in before running FieldWorks.
