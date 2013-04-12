@@ -35,6 +35,14 @@ fieldworks (7.3.2~alpha3) testing; urgency=low
 
  -- Neil Mayhew <neil_mayhew@sil.org>  Thu, 21 Feb 2013 21:07:52 -0700
 
+fieldworks (7.0.6) testing; urgency=low
+
+  * Promote to final release
+  * No changes apart from new version and tag
+  * Tag is linux/FieldWorks7.0.6
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Wed, 20 Feb 2013 12:26:53 -0700
+
 fieldworks (7.0.6~rc4.1) testing; urgency=low
 
   * Fix build errors on quantal and raring
