@@ -1,3 +1,9 @@
+fieldworks (8.0.1~alpha2) testing; urgency=low
+
+  * See git log linux/FieldWorks8.0.1~alpha1..linux/FieldWorks8.0.1~alpha2
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Sat, 20 Apr 2013 16:44:21 -0600
+
 fieldworks (8.0.1~alpha1) testing; urgency=low
 
   * See git log linux/FieldWorks7.3.2-alpha8..linux/FieldWorks8.0.1~alpha1
