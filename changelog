@@ -1,20 +1,20 @@
-fieldworks (8.1.0~alpha3) testing; urgency=low
+fieldworks (8.0.2~alpha3) testing; urgency=low
 
-  * See git log linux/FieldWorks8.1.0-alpha2..linux/FieldWorks8.1.0-alpha3
+  * See git log linux/FieldWorks8.0.1~alpha2..linux/FieldWorks8.0.2~alpha3
 
- -- Neil Mayhew <neil_mayhew@sil.org>  Fri, 28 Jun 2013 01:45:03 -0600
+ -- Neil Mayhew <neil_mayhew@sil.org>  Wed, 22 May 2013 16:27:51 -0600
 
-fieldworks (8.1.0~alpha2) testing; urgency=low
+fieldworks (8.0.1~alpha2) testing; urgency=low
 
-  * See git log linux/FieldWorks8.1.0-alpha1..linux/FieldWorks8.1.0-alpha2
+  * See git log linux/FieldWorks8.0.1~alpha1..linux/FieldWorks8.0.1~alpha2
 
- -- Neil Mayhew <neil_mayhew@sil.org>  Tue, 16 Apr 2013 09:25:29 -0600
+ -- Neil Mayhew <neil_mayhew@sil.org>  Sat, 20 Apr 2013 16:44:21 -0600
 
-fieldworks (8.1.0~alpha1) testing; urgency=low
+fieldworks (8.0.1~alpha1) testing; urgency=low
 
-  * See git log linux/FieldWorks7.3.2-alpha8..linux/FieldWorks8.1.0-alpha1
+  * See git log linux/FieldWorks7.3.2-alpha8..linux/FieldWorks8.0.1~alpha1
 
- -- Neil Mayhew <neil_mayhew@sil.org>  Fri, 12 Apr 2013 17:31:37 -0600
+ -- Neil Mayhew <neil_mayhew@sil.org>  Thu, 18 Apr 2013 13:57:57 -0600
 
 fieldworks (7.3.2~alpha8) testing; urgency=low
 
