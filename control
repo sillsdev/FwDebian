@@ -18,7 +18,8 @@ Build-Depends:
  libmono-winforms2.0-cil,
  libmono-cairo2.0-cil,
  libenchant-dev,
- libxklavier-dev
+ libxklavier-dev,
+ wget
 Standards-Version: 3.9.1
 Homepage: http://fieldworks.sil.org/
 
