@@ -58,6 +58,7 @@ Depends:
  zenity,
  chmsee,
  geckofx,
+ xsltproc,
  happycoders-libsocket,
  adduser (>= 3.11),
  fieldworks-gtk-sharp2 (>= 2.12.10-2),
