@@ -18,7 +18,8 @@ Build-Depends:
  libmono-cairo2.0-cil,
  libenchant-dev,
  libxklavier-dev,
- wget
+ wget,
+ xsltproc
 Standards-Version: 3.9.1
 Homepage: http://fieldworks.sil.org/
 
@@ -94,5 +95,140 @@ Description: A suite of programs to manage language and cultural data
  .
  This is a metapackage that installs both the required and the optional
  parts of FieldWorks.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-es
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Spanish.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-fa
+Architecture: all
+Depends: ${misc:Depends}, fonts-farsiweb, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Persian.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-fr
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into French.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-hi
+Architecture: all
+Depends: ${misc:Depends}, ttf-indic-fonts-core, ttf-devanagari-fonts, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Hindi.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-hu
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Hungarian.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-id
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Indonesian.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-ko
+Architecture: all
+Depends: ${misc:Depends}, fonts-nanum, fonts-unfonts-core, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Korean.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-ms
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Malay (macrolanguage).
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-pt
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Portuguese.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-ro
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Romanian.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-ru
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Russian.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-te
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Telugu.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-tr
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Turkish.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-vi
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Vietnamese.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: fieldworks-l10n-zh-cn
+Architecture: all
+Depends: ${misc:Depends}, ttf-wqy-zenhei, fonts-arphic-uming, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Chinese.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
  .
  For further information, please visit http://fieldworks.sil.org/
