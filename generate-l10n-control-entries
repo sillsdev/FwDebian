@@ -1,0 +1,65 @@
+#!/bin/bash
+
+# generate-l10n-control-entries
+#
+# Created in 2013 using work from SteveMc.
+#
+# Writes l10n package information to control-l10n for manually merging with control,
+# as well as creating fieldworks-l10n-*.install files.
+#
+# Usage: $ ./generate-l10n-control-entries [../path/to/fwrepo/fw]
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+DEBIAN_PATH="$SCRIPT_DIR"
+FWROOT="${1:-"$DEBIAN_PATH/.."}"
+CONTROL_OUTPUT="$DEBIAN_PATH/control-l10n"
+
+rm -f "$CONTROL_OUTPUT"
+
+cd "$FWROOT"
+
+# Customize the debian/control file and create any needed .install files
+# according to the available localization information.
+LOCALIZATIONS=$(ls Localizations/messages.*.po | sed 's/^.*messages\.\(.*\)\.po/\1/')
+for LOCALE in $LOCALIZATIONS; do
+	PACKAGETAG=${LOCALE,,}
+	# Get the language name from the ISO 639 data file
+	LANGUAGE=$(grep '\s'$LOCALE'\s' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
+	if [ "$LANGUAGE" = "" ]; then
+	   # Try stripping off any country, script, or variant codes
+	   LANGUAGE_TAG=$(echo $LOCALE | sed 's/-.*$//')
+	   LANGUAGE=$(grep '\s'$LANGUAGE_TAG'\s' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
+	   if [ "$LANGUAGE" = "" ]; then
+		  # Assume we must have a 3-letter code.
+		  LANGUAGE=$(grep ^$LANGUAGE_TAG'\s' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
+	   fi
+	fi
+	if [ "$LANGUAGE" = "" ]; then
+	   echo "Cannot determine language name for $LOCALE! ..." >&2
+	   LANGUAGE=$LOCALE
+	fi
+
+	cat >>"$CONTROL_OUTPUT" <<-EOF
+		Package: fieldworks-l10n-$PACKAGETAG
+		Architecture: all
+	EOF
+	if [ -f "$DEBIAN_PATH"/$PACKAGETAG.depends ]; then
+		cat "$DEBIAN_PATH"/$PACKAGETAG.depends >>"$CONTROL_OUTPUT"
+	else
+		echo 'Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})' >>"$CONTROL_OUTPUT"
+	fi
+	cat >>"$CONTROL_OUTPUT" <<-EOF
+		Description: FieldWorks user interface localization into $LANGUAGE.
+		 FieldWorks is a suite of software tools to help language development teams
+		 manage language and cultural data, with support for complex scripts.
+		 .
+		 For further information, please visit http://fieldworks.sil.org/
+
+	EOF
+	cat >"$DEBIAN_PATH"/fieldworks-l10n-$PACKAGETAG.install <<-EOF
+		usr/lib/fieldworks/$LOCALE/*.resources.dll usr/lib/fieldworks/$LOCALE
+		usr/share/fieldworks/Language?Explorer/Configuration/strings-$LOCALE.xml
+	EOF
+done
