@@ -1,2 +1,2 @@
-usr/lib/fieldworks/id/*.resources.dll usr/lib/fieldworks/id
-usr/share/fieldworks/Language?Explorer/Configuration/strings-id.xml
+usr/lib/fieldworks-l10n-id/*.resources.dll
+usr/lib/fieldworks-l10n-id/strings-id.xml

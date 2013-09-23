@@ -1,2 +1,2 @@
-usr/lib/fieldworks/hu/*.resources.dll usr/lib/fieldworks/hu
-usr/share/fieldworks/Language?Explorer/Configuration/strings-hu.xml
+usr/lib/fieldworks-l10n-hu/*.resources.dll
+usr/lib/fieldworks-l10n-hu/strings-hu.xml

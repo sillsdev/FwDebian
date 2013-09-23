@@ -1,2 +1,2 @@
-usr/lib/fieldworks/vi/*.resources.dll usr/lib/fieldworks/vi
-usr/share/fieldworks/Language?Explorer/Configuration/strings-vi.xml
+usr/lib/fieldworks-l10n-vi/*.resources.dll
+usr/lib/fieldworks-l10n-vi/strings-vi.xml

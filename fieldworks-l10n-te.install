@@ -1,2 +1,2 @@
-usr/lib/fieldworks/te/*.resources.dll usr/lib/fieldworks/te
-usr/share/fieldworks/Language?Explorer/Configuration/strings-te.xml
+usr/lib/fieldworks-l10n-te/*.resources.dll
+usr/lib/fieldworks-l10n-te/strings-te.xml

@@ -1,2 +1,2 @@
-usr/lib/fieldworks/fa/*.resources.dll usr/lib/fieldworks/fa
-usr/share/fieldworks/Language?Explorer/Configuration/strings-fa.xml
+usr/lib/fieldworks-l10n-fa/*.resources.dll
+usr/lib/fieldworks-l10n-fa/strings-fa.xml

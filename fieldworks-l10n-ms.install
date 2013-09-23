@@ -1,2 +1,2 @@
-usr/lib/fieldworks/ms/*.resources.dll usr/lib/fieldworks/ms
-usr/share/fieldworks/Language?Explorer/Configuration/strings-ms.xml
+usr/lib/fieldworks-l10n-ms/*.resources.dll
+usr/lib/fieldworks-l10n-ms/strings-ms.xml

@@ -1,2 +1,2 @@
-usr/lib/fieldworks/ko/*.resources.dll usr/lib/fieldworks/ko
-usr/share/fieldworks/Language?Explorer/Configuration/strings-ko.xml
+usr/lib/fieldworks-l10n-ko/*.resources.dll
+usr/lib/fieldworks-l10n-ko/strings-ko.xml

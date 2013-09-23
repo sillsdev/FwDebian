@@ -59,7 +59,7 @@ for LOCALE in $LOCALIZATIONS; do
 
 	EOF
 	cat >"$DEBIAN_PATH"/fieldworks-l10n-$PACKAGETAG.install <<-EOF
-		usr/lib/fieldworks/$LOCALE/*.resources.dll usr/lib/fieldworks/$LOCALE
-		usr/share/fieldworks/Language?Explorer/Configuration/strings-$LOCALE.xml
+		usr/lib/fieldworks-l10n-${LOCALE,,}/*.resources.dll
+		usr/lib/fieldworks-l10n-${LOCALE,,}/strings-$LOCALE.xml
 	EOF
 done

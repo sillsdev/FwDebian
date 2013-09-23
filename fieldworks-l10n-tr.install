@@ -1,2 +1,2 @@
-usr/lib/fieldworks/tr/*.resources.dll usr/lib/fieldworks/tr
-usr/share/fieldworks/Language?Explorer/Configuration/strings-tr.xml
+usr/lib/fieldworks-l10n-tr/*.resources.dll
+usr/lib/fieldworks-l10n-tr/strings-tr.xml

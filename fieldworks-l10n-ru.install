@@ -1,2 +1,2 @@
-usr/lib/fieldworks/ru/*.resources.dll usr/lib/fieldworks/ru
-usr/share/fieldworks/Language?Explorer/Configuration/strings-ru.xml
+usr/lib/fieldworks-l10n-ru/*.resources.dll
+usr/lib/fieldworks-l10n-ru/strings-ru.xml
