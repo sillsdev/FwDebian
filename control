@@ -18,6 +18,7 @@ Build-Depends:
  libmono-cairo2.0-cil,
  libenchant-dev,
  libxklavier-dev,
+ docbook2x, gzip,
  wget,
  xsltproc
 Standards-Version: 3.9.1
