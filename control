@@ -12,7 +12,7 @@ Build-Depends:
  xutils-dev,
  libboost-test-dev,
  geckofx,
- fieldworks-mono, fieldworks-libgdiplus, fieldworks-gtk-sharp2,
+ fieldworks-mono, fieldworks-libgdiplus, fieldworks-gtk-sharp2, fieldworks-mono-basic,
  mono-devel,
  libmono-winforms2.0-cil,
  libmono-cairo2.0-cil,
