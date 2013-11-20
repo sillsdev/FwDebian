@@ -87,7 +87,7 @@ Architecture: all
 Depends:
  ${misc:Depends},
  fieldworks-applications (>= ${binary:Version}),
- fieldworks-examples (>= ${binary:Version})
+ fieldworks-examples (>= 7.0)
 Recommends:
  fieldworks-movies (>= 7.0)
 Description: A suite of programs to manage language and cultural data
