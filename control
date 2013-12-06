@@ -51,10 +51,7 @@ Depends:
  fieldworks-libgdiplus (>= 2.10-3),
  fieldworks-mono (>= 2.10.4-3),
  fieldworks-mono-basic (>= 2.10-3),
- fonts-sil-charis | ttf-sil-charis,
- fonts-sil-doulos | ttf-sil-doulos,
- fonts-sil-galatia | ttf-sil-galatia,
- fonts-sil-ezra | ttf-sil-ezra,
+ fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
  ttf-mscorefonts-installer
 Conflicts:
  ttf-thai-tlwg (<= 1:0.4.13-4)
