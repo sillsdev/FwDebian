@@ -2,4 +2,5 @@
 /usr/lib/fieldworks
 /usr/share/{applications,pixmaps}
 /usr/share/fieldworks
+/usr/share/man
 /var
