@@ -52,7 +52,8 @@ Depends:
  fieldworks-mono (>= 2.10.4-3),
  fieldworks-mono-basic (>= 2.10-3),
  fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
- ttf-mscorefonts-installer
+ ttf-mscorefonts-installer,
+ flexbridge
 Conflicts:
  ttf-thai-tlwg (<= 1:0.4.13-4)
 Suggests:
