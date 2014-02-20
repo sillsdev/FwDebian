@@ -1,3 +1,9 @@
+fieldworks (8.0.9) testing; urgency=medium
+
+  * See git log FieldWorks8.0.8-rc2.1..FieldWorks8.0.9
+
+ -- Neil Mayhew <neil_mayhew@sil.org>  Wed, 19 Feb 2014 14:46:54 -0700
+
 fieldworks (8.0.8~rc2.1) testing; urgency=medium
 
   * See git log FieldWorks8.0.8-rc2..FieldWorks8.0.8-rc2.1
