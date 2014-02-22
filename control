@@ -24,20 +24,6 @@ Build-Depends:
 Standards-Version: 3.9.1
 Homepage: http://fieldworks.sil.org/
 
-Package: fieldworks-movies
-Architecture: all
-Depends:
- ${misc:Depends}
-Recommends:
- fieldworks-applications
-Description: A suite of programs to manage language and cultural data - movies
- FieldWorks is a suite of software tools to help language development teams
- manage language and cultural data, with support for complex scripts.
- .
- This optional package contains the tutorial movies.
- .
- For further information, please visit http://fieldworks.sil.org/
-
 Package: fieldworks-applications
 Architecture: any
 Depends:
@@ -52,7 +38,8 @@ Depends:
  fieldworks-mono (>= 2.10.4-3),
  fieldworks-mono-basic (>= 2.10-3),
  fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
- ttf-mscorefonts-installer
+ ttf-mscorefonts-installer,
+ flexbridge
 Conflicts:
  ttf-thai-tlwg (<= 1:0.4.13-4)
 Suggests:
@@ -70,8 +57,6 @@ Architecture: all
 Depends:
  ${misc:Depends},
  fieldworks-applications (>= ${binary:Version})
-Recommends:
- fieldworks-movies (>= 7.0)
 Description: A suite of programs to manage language and cultural data
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
