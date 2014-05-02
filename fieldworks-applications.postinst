@@ -32,7 +32,7 @@ case "$1" in
 		db_get fieldworks/users/group-list
 		for USER in $RET
 		do
-			adduser --quiet $USER fieldworks 2>/dev/null
+			adduser --quiet $USER fieldworks || true
 		done
 
 		VLF=/var/lib/fieldworks
