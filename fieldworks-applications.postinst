@@ -37,12 +37,9 @@ case "$1" in
 
 		VLF=/var/lib/fieldworks
 		mkdir -p $VLF
-		if [ $(stat -c %G $VLF) != fieldworks ]
-		then
-			chgrp -R fieldworks $VLF
-			chmod -R g+w $VLF
-			find $VLF -type d -print0 | xargs -0 chmod 2775
-		fi
+		chgrp -R fieldworks $VLF
+		chmod -R g+w $VLF
+		find $VLF -type d -print0 | xargs -0 chmod 2775
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
