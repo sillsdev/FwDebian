@@ -1,3 +1,9 @@
+fieldworks (8.1.1) testing; urgency=low
+
+  * See git log FieldWorks8.1.0..FieldWorks8.1.1
+
+ -- MarkS <marksvc@gmail.com>  Wed, 24 Sep 2014 08:06:33 -0600
+
 fieldworks (8.1.0) testing; urgency=low
 
   * See git log FieldWorks8.0.10..FieldWorks8.1.0
