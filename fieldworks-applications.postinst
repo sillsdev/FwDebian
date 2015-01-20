@@ -40,6 +40,14 @@ case "$1" in
 		chgrp -R fieldworks $VLF
 		chmod -R g+w $VLF
 		find $VLF -type d -print0 | xargs -0 chmod 2775
+
+		# This is a hack working with new linux package
+		# http://hg.palaso.org/ec-main
+		VLEC=/var/lib/encConverters
+		if [ -d $VLEC ]
+		then
+			cp -r $VLEC/registry $VLF
+		fi
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)

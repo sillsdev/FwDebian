@@ -12,15 +12,15 @@ Build-Depends:
  xutils-dev,
  libboost-test-dev,
  geckofx29,
- fieldworks-mono, fieldworks-libgdiplus, fieldworks-gtk-sharp2, fieldworks-mono-basic,
- mono-devel,
+ mono-sil, libgdiplus-sil, gtk-sharp2-sil, mono-basic-sil,
  libmono-winforms2.0-cil,
  libmono-cairo2.0-cil,
  libenchant-dev,
  libxklavier-dev,
  docbook2x, gzip,
  wget,
- xsltproc
+ xsltproc,
+ fieldworks-enc-converters
 Standards-Version: 3.9.1
 Homepage: http://fieldworks.sil.org/
 
@@ -34,13 +34,14 @@ Depends:
  libhunspell-dev,
  xsltproc, udisks,
  adduser (>= 3.11),
- fieldworks-gtk-sharp2 (>= 2.12.10-2),
- fieldworks-libgdiplus (>= 2.10-3),
- fieldworks-mono (>= 2.10.4-3),
- fieldworks-mono-basic (>= 2.10-3),
+ gtk-sharp2-sil (>= 2.12.10-2),
+ libgdiplus-sil (>= 2.10.8-7),
+ mono-sil (>= 3.4.0-10),
+ mono-basic-sil (>= 2.10-4),
  fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
  ttf-mscorefonts-installer,
- flexbridge
+ flexbridge,
+ fieldworks-enc-converters
 Conflicts:
  ttf-thai-tlwg (<= 1:0.4.13-4)
 Suggests:
