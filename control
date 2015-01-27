@@ -32,7 +32,7 @@ Depends:
  chmsee,
  geckofx,
  libhunspell-dev,
- xsltproc,
+ xsltproc, udisks,
  adduser (>= 3.11),
  fieldworks-gtk-sharp2 (>= 2.12.10-2),
  fieldworks-libgdiplus (>= 2.10-3),
