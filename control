@@ -32,7 +32,7 @@ Depends:
  chmsee,
  geckofx29,
  libhunspell-dev,
- xsltproc,
+ xsltproc, udisks,
  adduser (>= 3.11),
  fieldworks-gtk-sharp2 (>= 2.12.10-2),
  fieldworks-libgdiplus (>= 2.10-3),
@@ -42,7 +42,8 @@ Depends:
  ttf-mscorefonts-installer,
  flexbridge
 Conflicts:
- ttf-thai-tlwg (<= 1:0.4.13-4)
+ ttf-thai-tlwg (<= 1:0.4.13-4),
+ fieldworks-enc-converters
 Suggests:
  fieldworks
 Description: A suite of programs to manage language and cultural data - applications
