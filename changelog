@@ -1,6 +1,12 @@
+fieldworks (8.2.2~beta) testing; urgency=low
+
+  * New version.
+
+ -- MarkS <marksvc@gmail.com>  Thu, 10 Sep 2015 12:32:03 -0600
+
 fieldworks (8.1.4) testing; urgency=low
 
-  * See git log FieldWorks8.1.3..FieldWorks8.1.2
+  * See git log FieldWorks8.1.3..FieldWorks8.1.4
 
  -- Brent McCarthy <brent_mccarthy@sil.org>  Fri, 08 May 2015 15:49:07 -0600
 
