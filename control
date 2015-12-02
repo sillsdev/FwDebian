@@ -21,7 +21,7 @@ Build-Depends:
  wget,
  xsltproc,
  fieldworks-enc-converters
-Standards-Version: 3.9.1
+Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
 
 Package: fieldworks-applications
