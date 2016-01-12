@@ -24,6 +24,41 @@ Build-Depends:
 Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
 
+Package: fieldworks-data
+Architecture: all
+Depends:
+ ${shlibs:Depends}, ${misc:Depends}
+Breaks:
+ fieldworks-applications (<< 9.0.0~)
+Replaces:
+ fieldworks-applications (<< 9.0.0~)
+Description: A suite of programs to manage language and cultural data - data files
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ This required package contains the FieldWorks data files and templates.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
+Package: libfieldworks-fdo
+Architecture: any
+Depends:
+ ${shlibs:Depends}, ${misc:Depends},
+ xsltproc, udisks,
+ mono-sil (>= 3.4.0-10),
+ fieldworks-data (= ${binary:Version})
+Breaks:
+ fieldworks-applications (<< 9.0.0~)
+Replaces:
+ fieldworks-applications (<< 9.0.0~)
+Description: A suite of programs to manage language and cultural data - FDO
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ This required package contains the FieldWorks data objects library.
+ .
+ For further information, please visit http://fieldworks.sil.org/
+
 Package: fieldworks-applications
 Architecture: any
 Depends:
@@ -41,7 +76,8 @@ Depends:
  fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
  ttf-mscorefonts-installer,
  flexbridge (>> 2.2.99),
- fieldworks-enc-converters (>= 4.0.4)
+ fieldworks-enc-converters (>= 4.0.4),
+ libfieldworks-fdo (= ${binary:Version})
 Conflicts:
  ttf-thai-tlwg (<= 1:0.4.13-4)
 Suggests:
@@ -58,7 +94,7 @@ Package: fieldworks
 Architecture: all
 Depends:
  ${misc:Depends},
- fieldworks-applications (>= ${binary:Version})
+ fieldworks-applications (= ${binary:Version})
 Description: A suite of programs to manage language and cultural data
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
