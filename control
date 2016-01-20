@@ -27,7 +27,8 @@ Package: libfieldworks-fdo
 Architecture: any
 Depends:
  ${shlibs:Depends}, ${misc:Depends},
- xsltproc, udisks,
+ xsltproc,
+ udisks | udisks2,
  mono-sil (>= 3.4.0-10)
 Breaks:
  fieldworks-applications (<< 9.0.0~)
@@ -49,7 +50,8 @@ Depends:
  chmsee,
  geckofx29,
  libhunspell-dev,
- xsltproc, udisks,
+ xsltproc,
+ udisks | udisks2,
  adduser (>= 3.11),
  gtk-sharp2-sil (>= 2.12.10-2),
  libgdiplus-sil (>= 2.10.8-7),
