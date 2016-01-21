@@ -21,17 +21,13 @@
 
 case "$1" in
 	configure)
-		db_get fieldworks/license/cpol-accepted
-		if [ "$RET" = true ]
-		then
-			/usr/lib/fieldworks/cpol-action unpack || true
-		fi
+		addgroup --system --quiet fieldworks 2>/dev/null
 
-		VLF=/var/lib/fieldworks
-		mkdir -p $VLF
-		chgrp -R fieldworks $VLF
-		chmod -R g+w $VLF
-		find $VLF -type d -print0 | xargs -0 chmod 2775
+		db_get fieldworks/users/group-list
+		for USER in $RET
+		do
+			adduser --quiet $USER fieldworks || true
+		done
 	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
