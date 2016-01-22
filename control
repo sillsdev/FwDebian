@@ -29,6 +29,7 @@ Depends:
  ${shlibs:Depends}, ${misc:Depends},
  xsltproc,
  udisks | udisks2,
+ adduser (>= 3.11),
  mono-sil (>= 3.4.0-10)
 Breaks:
  fieldworks-applications (<< 9.0.0~)
