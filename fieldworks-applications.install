@@ -1,5 +1,6 @@
 /usr/bin
 /usr/lib/fieldworks
 /usr/share/{applications,pixmaps}
-/usr/share/tmp/FW/fieldworks	/usr/share
+/usr/share/fieldworks
 /usr/share/man
+/var
