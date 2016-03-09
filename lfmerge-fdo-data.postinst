@@ -30,7 +30,12 @@ case "$1" in
 				adduser --quiet $USER fieldworks || true
 			done
 		fi
-	;;
+
+		VLF=/var/lib/fieldworks
+		mkdir -p $VLF
+		chgrp -R fieldworks $VLF
+		chmod -R g+w $VLF
+		find $VLF -type d -print0 | xargs -0 chmod 2775	;;
 
 	abort-upgrade|abort-remove|abort-deconfigure)
 	;;
