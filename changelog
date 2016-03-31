@@ -1,3 +1,9 @@
+lfmerge-fdo (8.2.7) unstable; urgency=medium
+
+  * New release
+
+ -- Eberhard Beilharz <eb1@sil.org>  Thu, 31 Mar 2016 18:17:46 +0200
+
 lfmerge-fdo (8.2.5) unstable; urgency=low
 
   * Initial release of lfmerge-fdo.
