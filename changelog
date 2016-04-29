@@ -4,6 +4,24 @@ fieldworks (8.3.0~alpha1) testing; urgency=low
 
  -- MarkS <marksvc@gmail.com>  Mon, 07 Mar 2016 09:53:34 -0700
 
+fieldworks (8.2.7) unstable; urgency=low
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Tue, 22 Mar 2016 11:33:07 -0600
+
+fieldworks (8.2.5) unstable; urgency=low
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Mon, 25 Jan 2016 15:25:25 -0700
+
+fieldworks (8.2.4) unstable; urgency=low
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Thu, 17 Dec 2015 15:32:56 -0700
+
 fieldworks (8.2.2~beta) testing; urgency=low
 
   * New version.
