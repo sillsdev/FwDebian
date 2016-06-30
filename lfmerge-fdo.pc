@@ -1,6 +1,6 @@
 prefix=${pcfiledir}/..	# usually this will resolve to /usr/lib
 assemblies_dir=${prefix}/lfmerge
-Libraries=${assemblies_dir}/FDO.dll ${assemblies_dir}/BasicUtils.dll ${assemblies_dir}/CoreImpl.dll ${assemblies_dir}/COMInterfaces.dll ${assemblies_dir}/Microsoft.Practices.ServiceLocation.dll  ${assemblies_dir}/FixFwDataDll.dll
+Libraries=${assemblies_dir}/FDO.dll ${assemblies_dir}/BasicUtils.dll ${assemblies_dir}/CoreImpl.dll ${assemblies_dir}/COMInterfaces.dll ${assemblies_dir}/Microsoft.Practices.ServiceLocation.dll ${assemblies_dir}/FixFwDataDll.dll
 
 Name: lfmerge-fdo
 Description: FieldWorks Data Objects managed library
