@@ -1,3 +1,9 @@
+lfmerge-fdo (8.2.8) unstable; urgency=medium
+
+  * Prevent data loss
+
+ -- Eberhard Beilharz <eb1@sil.org>  Thu, 07 Jul 2016 11:40:23 +0200
+
 lfmerge-fdo (8.2.7) unstable; urgency=medium
 
   * New release
