@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-# postinst script for lfmerge-fdo-@DatabaseVersion@
+# postinst script for lfmerge-fdo-data
 #
 # see: dh_installdeb(1)
 #

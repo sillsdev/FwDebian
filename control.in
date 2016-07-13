@@ -39,6 +39,7 @@ Description: LanguageForge Send/Receive
  .
  This metapackage installs the different database specific versions.
 
+
 Package: lfmerge-fdo-@DatabaseVersion@
 Architecture: any
 Depends:
@@ -47,7 +48,7 @@ Depends:
  udisks | udisks2,
  adduser (>= 3.11),
  mono-sil (>= 3.4.0-10),
- lfmerge-fdo-@DatabaseVersion@-data | fieldworks-applications
+ lfmerge-fdo-data | fieldworks-applications
 Conflicts:
  libfieldworks-fdo-@DatabaseVersion@
 Replaces:
@@ -64,18 +65,14 @@ Description: LanguageForge Send/Receive
  This required package contains the FieldWorks data objects library for
  database version @DatabaseVersion@.
 
-Package: lfmerge-fdo-@DatabaseVersion@-data
+Package: lfmerge-fdo-data
 Architecture: any
 Depends:
  ${shlibs:Depends}, ${misc:Depends}
 Conflicts:
- fieldworks-applications,
- lfmerge-fdo-data
-Replaces:
- lfmerge-fdo-data
+ fieldworks-applications
 Breaks:
- fieldworks-applications,
- lfmerge-fdo-data
+ fieldworks-applications
 Description: LanguageForge Send/Receive
  lfmerge is a tool that is used by the LanguageForge server
  to share data with language depot. Since this tool makes assumptions

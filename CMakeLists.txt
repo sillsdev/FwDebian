@@ -55,18 +55,6 @@ configure_file (
 )
 
 configure_file (
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-data.install.in"
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-data-@DatabaseVersion@.install"
-	@ONLY
-)
-
-configure_file (
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-data.postinst.in"
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-data-@DatabaseVersion@.postinst"
-	@ONLY
-)
-
-configure_file (
 	"${PROJECT_SOURCE_DIR}/rules.mk.in"
 	"${PROJECT_SOURCE_DIR}/rules.mk"
 	@ONLY
