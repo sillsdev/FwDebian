@@ -35,3 +35,6 @@ tar-ignore = _darcs
 tar-ignore = {arch}
 tar-ignore = debian/source/local-options
 tar-ignore = .p4config
+tar-ignore = debian/*.in
+tar-ignore = cmakebuild
+tar-ignore = debian/CMakeLists.txt

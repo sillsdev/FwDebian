@@ -1,4 +1,4 @@
-Source: lfmerge-fdo
+Source: lfmerge-fdo-@DatabaseVersion@
 Section: Libraries
 Priority: extra
 Maintainer: Eberhard Beilharz <eb1@sil.org>
@@ -23,21 +23,13 @@ Build-Depends:
 Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
 
+# We explicitly list the different db model packages here, so that building for an older
+# version still keeps the dependency on the newer model version package.
 Package: lfmerge-fdo
 Architecture: any
 Depends:
- ${shlibs:Depends}, ${misc:Depends},
- xsltproc,
- udisks | udisks2,
- adduser (>= 3.11),
- mono-sil (>= 3.4.0-10),
- lfmerge-fdo-data | fieldworks-applications
-Conflicts:
- libfieldworks-fdo
-Replaces:
- libfieldworks-fdo
-Breaks:
- libfieldworks-fdo
+ lfmerge-fdo-7000068,
+ lfmerge-fdo-@DatabaseVersion@
 Description: LanguageForge Send/Receive
  lfmerge is a tool that is used by the LanguageForge server
  to share data with language depot. Since this tool makes assumptions
@@ -45,9 +37,34 @@ Description: LanguageForge Send/Receive
  outside of languageforge development and should probably not be
  installed.
  .
- This required package contains the FieldWorks data objects library.
+ This metapackage installs the different database specific versions.
 
-Package: lfmerge-fdo-data
+Package: lfmerge-fdo-@DatabaseVersion@
+Architecture: any
+Depends:
+ ${shlibs:Depends}, ${misc:Depends},
+ xsltproc,
+ udisks | udisks2,
+ adduser (>= 3.11),
+ mono-sil (>= 3.4.0-10),
+ lfmerge-fdo-data-@DatabaseVersion@ | fieldworks-applications
+Conflicts:
+ libfieldworks-fdo-@DatabaseVersion@
+Replaces:
+ libfieldworks-fdo-@DatabaseVersion@
+Breaks:
+ libfieldworks-fdo-@DatabaseVersion@
+Description: LanguageForge Send/Receive
+ lfmerge is a tool that is used by the LanguageForge server
+ to share data with language depot. Since this tool makes assumptions
+ about the location and content of files it is probably not very useful
+ outside of languageforge development and should probably not be
+ installed.
+ .
+ This required package contains the FieldWorks data objects library for
+ database version @DatabaseVersion@.
+
+Package: lfmerge-fdo-data-@DatabaseVersion@
 Architecture: any
 Depends:
  ${shlibs:Depends}, ${misc:Depends}

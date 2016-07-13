@@ -1,6 +1,7 @@
 This work was packaged for Debian by:
 
 	Neil Mayhew <neil_mayhew@sil.org> on Mon, 10 May 2010 12:28:32 -0600
+	and Eberhard Beilharz <eb1@sil.org> on Tue, 12 Jul 2016 18:23:02 +0200
 
 It was downloaded from:
 
@@ -12,7 +13,7 @@ Upstream Author:
 
 Copyright:
 
-	Copyright (c) 1999-2013 SIL International
+	Copyright (c) 1999-2016 SIL International
 
 License:
 
@@ -35,7 +36,7 @@ License:
 
 The Debian packaging is:
 
-	Copyright (c) 2010-2013 SIL International
+	Copyright (c) 2010-2016 SIL International
 
 	and is licensed under the LGPL, version 2.1 or later
 	(http://www.gnu.org/licenses/lgpl-2.1.html)

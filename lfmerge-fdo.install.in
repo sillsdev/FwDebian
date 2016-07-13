@@ -1,0 +1,2 @@
+/usr/lib/fieldworks/*		/usr/lib/lfmerge/@DatabaseVersion@
+debian/lfmerge-fdo-@DatabaseVersion@.pc	/usr/lib/pkgconfig
