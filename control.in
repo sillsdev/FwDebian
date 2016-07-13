@@ -47,7 +47,7 @@ Depends:
  udisks | udisks2,
  adduser (>= 3.11),
  mono-sil (>= 3.4.0-10),
- lfmerge-fdo-data-@DatabaseVersion@ | fieldworks-applications
+ lfmerge-fdo-@DatabaseVersion@-data | fieldworks-applications
 Conflicts:
  libfieldworks-fdo-@DatabaseVersion@
 Replaces:
@@ -64,7 +64,7 @@ Description: LanguageForge Send/Receive
  This required package contains the FieldWorks data objects library for
  database version @DatabaseVersion@.
 
-Package: lfmerge-fdo-data-@DatabaseVersion@
+Package: lfmerge-fdo-@DatabaseVersion@-data
 Architecture: any
 Depends:
  ${shlibs:Depends}, ${misc:Depends}
