@@ -43,7 +43,7 @@ configure_file (
 )
 
 configure_file (
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo.install.in"
+	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-dbversion.install.in"
 	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-@DatabaseVersion@.install"
 	@ONLY
 )
@@ -51,6 +51,12 @@ configure_file (
 configure_file (
 	"${PROJECT_SOURCE_DIR}/lfmerge-fdo.pc.in"
 	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-@DatabaseVersion@.pc"
+	@ONLY
+)
+
+configure_file (
+	"${PROJECT_SOURCE_DIR}/lfmerge-fdo.pc.in"
+	"${PROJECT_SOURCE_DIR}/lfmerge-fdo.pc"
 	@ONLY
 )
 
