@@ -28,8 +28,8 @@ Homepage: http://fieldworks.sil.org/
 Package: lfmerge-fdo
 Architecture: any
 Depends:
- lfmerge-fdo-7000068,
- lfmerge-fdo-@DatabaseVersion@
+ lfmerge-fdo-7000068 (>= ${binary:Version}),
+ lfmerge-fdo-@DatabaseVersion@ (>= ${binary:Version})
 Description: LanguageForge Send/Receive
  lfmerge is a tool that is used by the LanguageForge server
  to share data with language depot. Since this tool makes assumptions
@@ -48,7 +48,7 @@ Depends:
  udisks | udisks2,
  adduser (>= 3.11),
  mono-sil (>= 3.4.0-10),
- lfmerge-fdo-data | fieldworks-applications
+ lfmerge-fdo-data (>= ${binary:Version}) | fieldworks-applications
 Conflicts:
  libfieldworks-fdo-@DatabaseVersion@
 Replaces:
