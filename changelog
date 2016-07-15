@@ -1,8 +1,26 @@
-fieldworks (8.2.2~beta) testing; urgency=low
+fieldworks (8.2.8) unstable; urgency=low
 
-  * New version.
+  * Prevent data loss.
 
- -- MarkS <marksvc@gmail.com>  Thu, 10 Sep 2015 12:32:03 -0600
+ -- Hasso <flex_devteam@sil.org>  Thu, 19 May 2016 17:17:17 +0000
+
+fieldworks (8.2.7) unstable; urgency=low
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Tue, 22 Mar 2016 11:33:07 -0600
+
+fieldworks (8.2.5) unstable; urgency=low
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Mon, 25 Jan 2016 15:25:25 -0700
+
+fieldworks (8.2.4) unstable; urgency=low
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Thu, 17 Dec 2015 15:32:56 -0700
 
 fieldworks (8.1.4) testing; urgency=low
 
