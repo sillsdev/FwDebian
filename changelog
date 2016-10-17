@@ -1,3 +1,9 @@
+fieldworks (8.3.0~beta) unstable; urgency=medium
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Mon, 17 Oct 2016 17:56:11 +0000
+
 fieldworks (8.3.0~alpha3) unstable; urgency=low
 
   * Bump version.
