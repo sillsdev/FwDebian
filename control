@@ -39,6 +39,7 @@ Depends:
  fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
  ttf-mscorefonts-installer,
  ttf-ancient-fonts,
+ pso-keys,
  flexbridge (>> 2.2.99),
  fieldworks-enc-converters (>= 4.0.4)
 Conflicts:
