@@ -1,3 +1,9 @@
+fieldworks (8.2.9) unstable; urgency=medium
+
+  * New release.
+
+ -- MarkS <marksvc@gmail.com>  Wed, 30 Nov 2016 21:43:27 +0000
+
 fieldworks (8.2.8) unstable; urgency=low
 
   * Prevent data loss.
