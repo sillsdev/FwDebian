@@ -29,6 +29,7 @@ Architecture: any
 Depends:
  lfmerge-fdo-7000068,
  lfmerge-fdo-7000069,
+ lfmerge-fdo-7000070,
  lfmerge-fdo-@DatabaseVersion@ (>= ${binary:Version})
 Description: LanguageForge Send/Receive
  lfmerge is a tool that is used by the LanguageForge server
