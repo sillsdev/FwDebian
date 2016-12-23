@@ -16,3 +16,4 @@ control
 changelog
 lfmerge-fdo-*.*
 rules.mk
+lfmerge-fdo.pc

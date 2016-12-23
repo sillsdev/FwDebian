@@ -1,3 +1,5 @@
+# This file will be first processed by the C preprocessor and then by the cmake configure_file
+# command. The result is a database version specific control file.
 Source: lfmerge-fdo-@DatabaseVersion@
 Section: Libraries
 Priority: extra
@@ -22,6 +24,9 @@ Build-Depends:
 Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
 
+# Exclude lfmerge-fdo and lfmerge-fdo-data for all but the latest model version
+#if __DatabaseVersion__ == __MaxDbVersion__
+
 # We explicitly list the different db model packages here, so that building for an older
 # version still keeps the dependency on the newer model version package.
 Package: lfmerge-fdo
@@ -39,7 +44,7 @@ Description: LanguageForge Send/Receive
  installed.
  .
  This metapackage installs the different database specific versions.
-
+#endif
 
 Package: lfmerge-fdo-@DatabaseVersion@
 Architecture: any
@@ -63,9 +68,10 @@ Description: LanguageForge Send/Receive
  outside of languageforge development and should probably not be
  installed.
  .
- This required package contains the FieldWorks data objects library for
- database version @DatabaseVersion@.
+ This required package contains the FDO (FieldWorks data objects) library
+ for database version @DatabaseVersion@.
 
+#if __DatabaseVersion__ == __MaxDbVersion__
 Package: lfmerge-fdo-data
 Architecture: any
 Depends:
@@ -83,3 +89,4 @@ Description: LanguageForge Send/Receive
  .
  This package contains data files that are identical to the ones installed by
  FieldWorks.
+#endif

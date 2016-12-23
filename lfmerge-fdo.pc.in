@@ -1,8 +1,8 @@
 prefix=${pcfiledir}/..	# usually this will resolve to /usr/lib
 assemblies_dir=${prefix}/lfmerge/@DatabaseVersion@
-Libraries=${assemblies_dir}/FDO.dll ${assemblies_dir}/BasicUtils.dll ${assemblies_dir}/CoreImpl.dll ${assemblies_dir}/COMInterfaces.dll ${assemblies_dir}/Microsoft.Practices.ServiceLocation.dll ${assemblies_dir}/FixFwDataDll.dll
+Libraries=${assemblies_dir}/FDO.dll ${assemblies_dir}/FixFwDataDll.dll
 
 Name: lfmerge-fdo-@DatabaseVersion@
 Description: FieldWorks Data Objects managed library
 Version: @FwMajor@.@FwMinor@
-Libs: -r:FDO.dll -r:BasicUtils.dll -r:CoreImpl.dll -r:COMInterfaces.dll -r:Microsoft.Practices.ServiceLocation.dll -r:FixFwDataDll.dll
+Libs: -r:FDO.dll -r:FixFwDataDll.dll
