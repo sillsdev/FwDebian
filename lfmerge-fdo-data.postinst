@@ -21,7 +21,7 @@
 
 case "$1" in
 	configure)
-		addgroup --system --quiet fieldworks 2>/dev/null
+		grep -q fieldworks /etc/group || addgroup --system --quiet fieldworks 2>/dev/null
 
 		if [ -e fieldworks/users/group-list ]; then
 			db_get fieldworks/users/group-list
