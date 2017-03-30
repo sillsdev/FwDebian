@@ -97,7 +97,7 @@ Description: FieldWorks user interface localization into French.
 
 Package: fieldworks-l10n-hi
 Architecture: all
-Depends: ${misc:Depends}, ttf-indic-fonts-core, ttf-devanagari-fonts, fieldworks-applications (= ${binary:Version})
+Depends: ${misc:Depends}, fonts-indic | ttf-devanagari-fonts, fieldworks-applications (= ${binary:Version})
 Description: FieldWorks user interface localization into Hindi.
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
