@@ -18,6 +18,7 @@ Build-Depends:
  docbook2x, gzip,
  wget,
  xsltproc,
+ icu-dev-fw (>= 54.1),
  fieldworks-enc-converters
 Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
@@ -40,6 +41,7 @@ Depends:
  ttf-mscorefonts-installer,
  ttf-ancient-fonts,
  pso-keys,
+ icu-fw (>= 54.1),
  flexbridge (>> 2.2.99),
  fieldworks-enc-converters (>= 4.0.4)
 Conflicts:
