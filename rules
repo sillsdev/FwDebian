@@ -9,4 +9,11 @@ build)	cd fw; source environ;       cd $OLDPWD;;
 esac
 
 echo make -f debian/rules.mk "$@"
-exec make -f debian/rules.mk "$@"
+make -f debian/rules.mk "$@"
+
+if [ "$1" == "build" ];
+	cd fw; source mono4environ;
+	echo xbuild Src/Paratext8Plugin/Partext8Plugin.csproj /p:Configuration=Release
+	xbuild Src/Paratext8Plugin/Partext8Plugin.csproj /p:Configuration=Release
+	cd $OLDPWD;
+fi
