@@ -9,7 +9,7 @@ build)	cd fw; source environ;       cd $OLDPWD;;
 esac
 
 echo make -f debian/rules.mk "$@"
-make -f debian/rules.mk "$@"
+exec make -f debian/rules.mk "$@"
 
 if [ "$1" == "build" ];
 	cd fw; source mono4environ;
