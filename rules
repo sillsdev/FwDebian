@@ -13,6 +13,7 @@ make -f debian/rules.mk "$@"
 
 if [ "$1" == "build" ]; then
 	cd fw; source mono4environ;
+	echo MONOPREFIX; echo $MONO_PREFIX; echo PATH:; echo $PATH
 	echo xbuild Src/Paratext8Plugin/Paratext8Plugin.csproj /p:Configuration=Release
 	xbuild Src/Paratext8Plugin/Paratext8Plugin.csproj /p:Configuration=Release
 	cd $OLDPWD;
