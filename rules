@@ -11,7 +11,7 @@ esac
 echo make -f debian/rules.mk "$@"
 make -f debian/rules.mk "$@"
 
-if [ "$1" == "build" ];
+if [ "$1" == "build" ]; then
 	cd fw; source mono4environ;
 	echo xbuild Src/Paratext8Plugin/Partext8Plugin.csproj /p:Configuration=Release
 	xbuild Src/Paratext8Plugin/Partext8Plugin.csproj /p:Configuration=Release
