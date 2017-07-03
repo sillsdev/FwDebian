@@ -34,6 +34,7 @@ Depends:
  adduser (>= 3.11),
  gtk-sharp2-sil (>= 2.12.10-2),
  libgdiplus-sil (>= 2.10.8-7),
+ libc6-dev,
  mono-sil (>= 3.4.0-10),
  mono-basic-sil (>= 2.10-4),
  fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
