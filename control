@@ -29,7 +29,7 @@ Depends:
  ${shlibs:Depends}, ${misc:Depends},
  zenity,
  chmsee,
- libhunspell-dev,
+ libhunspell,
  xsltproc,
  udisks | udisks2,
  adduser (>= 3.11),
