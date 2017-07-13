@@ -11,7 +11,7 @@ Build-Depends:
  libgtkmm-2.4-dev, uuid-dev,
  xutils-dev,
  libboost-test-dev,
- mono-sil, mono4-sil, libgdiplus-sil, gtk-sharp2-sil, mono-basic-sil,
+ mono-sil, libgdiplus-sil, gtk-sharp2-sil, mono-basic-sil,
  cli-common-dev,
  libenchant-dev,
  libxklavier-dev,
