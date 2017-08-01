@@ -30,6 +30,7 @@ Depends:
  chmsee,
  libhunspell-dev,
  xsltproc,
+ lame,
  udisks | udisks2,
  adduser (>= 3.11),
  gtk-sharp2-sil (>= 2.12.10-2),
