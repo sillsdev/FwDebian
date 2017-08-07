@@ -9,4 +9,4 @@ build)	cd fw; source environ;       cd $OLDPWD;;
 esac
 
 echo make -f debian/rules.mk "$@"
-exec make -f debian/rules.mk "$@"
+make -f debian/rules.mk "$@"
