@@ -34,6 +34,7 @@ Depends:
  lame,
  udisks | udisks2,
  adduser (>= 3.11),
+ libc6-dev,
  gtk-sharp4-sil (>= 4.4),
  libgdiplus4-sil (>= 4.4),
  mono4-sil (>= 4.4),
