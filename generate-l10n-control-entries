@@ -55,7 +55,7 @@ for LOCALE in $LOCALIZATIONS; do
 		 FieldWorks is a suite of software tools to help language development teams
 		 manage language and cultural data, with support for complex scripts.
 		 .
-		 For further information, please visit http://fieldworks.sil.org/
+		 For further information, please visit https://software.sil.org/fieldworks
 
 	EOF
 	cat >"$DEBIAN_PATH"/fieldworks-l10n-$PACKAGETAG.install <<-EOF

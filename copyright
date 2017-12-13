@@ -4,7 +4,7 @@ This work was packaged for Debian by:
 
 It was downloaded from:
 
-	http://fieldworks.sil.org/
+	https://software.sil.org/fieldworks
 
 Upstream Author:
 
@@ -12,7 +12,7 @@ Upstream Author:
 
 Copyright:
 
-	Copyright (c) 1999-2013 SIL International
+	Copyright (c) 1999-2018 SIL International
 
 License:
 
@@ -35,7 +35,7 @@ License:
 
 The Debian packaging is:
 
-	Copyright (c) 2010-2013 SIL International
+	Copyright (c) 2010-2018 SIL International
 
 	and is licensed under the LGPL, version 2.1 or later
 	(http://www.gnu.org/licenses/lgpl-2.1.html)
