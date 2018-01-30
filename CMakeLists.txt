@@ -53,13 +53,13 @@ configure_file (
 
 configure_file (
 	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-dbversion.install.in"
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-@DatabaseVersion@.install"
+	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-${DatabaseVersion}.install"
 	@ONLY
 )
 
 configure_file (
 	"${PROJECT_SOURCE_DIR}/lfmerge-fdo.pc.in"
-	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-@DatabaseVersion@.pc"
+	"${PROJECT_SOURCE_DIR}/lfmerge-fdo-${DatabaseVersion}.pc"
 	@ONLY
 )
 
@@ -77,7 +77,7 @@ configure_file (
 
 if (ADD_PACKAGE_LINK)
 	execute_process(
-		COMMAND bash -c "ln -s lfmerge-fdo lfmerge-fdo-@DatabaseVersion@"
+		COMMAND bash -c "ln -s lfmerge-fdo lfmerge-fdo-${DatabaseVersion}"
 		WORKING_DIRECTORY "${PROJECT_SOURCE_DIR}/../.."
 	)
 endif (ADD_PACKAGE_LINK)
