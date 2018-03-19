@@ -8,6 +8,7 @@ Build-Depends:
  libtool, automake, autoconf,
  desktop-file-utils,
  gawk, unzip, tofrodos, libpython2.7,
+ python,
  libgtkmm-2.4-dev, uuid-dev,
  xutils-dev,
  libboost-test-dev,
