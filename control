@@ -38,7 +38,7 @@ Depends:
  libc6-dev,
  mono-sil (>= 3.4.0-10),
  mono-basic-sil (>= 2.10-4),
- fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
+ fonts-sil-charis, fonts-sil-doulos, fonts-sil-galatia, fonts-sil-ezra,
  ttf-mscorefonts-installer,
  ttf-ancient-fonts,
  pso-keys,
