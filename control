@@ -40,7 +40,7 @@ Depends:
  libgdiplus4-sil (>= 4.4),
  mono4-sil (>= 4.4),
  mono-basic4-sil (>= 4.4),
- fonts-sil-charissil, fonts-sil-doulossil, fonts-sil-galatia, fonts-sil-ezra,
+ fonts-sil-charis, fonts-sil-doulos, fonts-sil-galatia, fonts-sil-ezra,
  ttf-mscorefonts-installer,
  ttf-ancient-fonts,
  pso-keys,
