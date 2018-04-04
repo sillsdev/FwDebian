@@ -4,7 +4,7 @@
 export RUNMODE=PACKAGE
 
 case $1 in
-build)	cd fw; source environ;       cd $OLDPWD;;
+build*)	cd fw; source environ;       cd $OLDPWD;;
 *)    	cd fw; source environ-other; cd $OLDPWD;;
 esac
 
