@@ -1,5 +1,7 @@
-# This file will be first processed by the C preprocessor and then by the cmake configure_file
-# command. The result is a database version specific control file.
+#if COMMENT
+// This file will be first processed by the C preprocessor and then by the cmake configure_file
+// command. The result is a database version specific control file.
+#endif
 Source: lfmerge-fdo-@DatabaseVersion@
 Section: Libraries
 Priority: extra
@@ -20,15 +22,23 @@ Build-Depends:
  docbook2x, gzip,
  wget,
  xsltproc,
+#if __DatabaseVersion__ < 7000070
+ geckofx29,
+#endif
  fieldworks-enc-converters
 Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
 
-# Exclude lfmerge-fdo and lfmerge-fdo-data for all but the latest model version
+#if COMMENT
+// Exclude lfmerge-fdo and lfmerge-fdo-data for all but the latest model version
+#endif
+
 #if __DatabaseVersion__ == __MaxDbVersion__
 
-# We explicitly list the different db model packages here, so that building for an older
-# version still keeps the dependency on the newer model version package.
+#if COMMENT
+// We explicitly list the different db model packages here, so that building for an older
+// version still keeps the dependency on the newer model version package.
+#endif
 Package: lfmerge-fdo
 Architecture: any
 Depends:
