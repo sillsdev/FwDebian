@@ -22,9 +22,6 @@ Build-Depends:
  docbook2x, gzip,
  wget,
  xsltproc,
-#if __DatabaseVersion__ < 7000070
- geckofx29,
-#endif
  fieldworks-enc-converters
 Standards-Version: 3.9.5
 Homepage: http://fieldworks.sil.org/
