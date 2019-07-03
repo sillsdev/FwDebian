@@ -96,4 +96,17 @@ Description: LanguageForge Send/Receive
  .
  This package contains data files that are identical to the ones installed by
  FieldWorks.
+#else
+Package: lfmerge-fdo-dummy
+Architecture: any
+Depends:
+ ${shlibs:Depends}, ${misc:Depends}
+Description: LanguageForge Send/Receive
+ lfmerge is a tool that is used by the LanguageForge server
+ to share data with language depot. Since this tool makes assumptions
+ about the location and content of files it is probably not very useful
+ outside of languageforge development and should probably not be
+ installed.
+ .
+ This package is a dummy package and can be ignored.
 #endif
