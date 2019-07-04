@@ -97,7 +97,7 @@ Description: LanguageForge Send/Receive
  This package contains data files that are identical to the ones installed by
  FieldWorks.
 #else
-Package: lfmerge-fdo-dummy
+Package: lfmerge-fdo-dummy-@DatabaseVersion@
 Architecture: any
 Depends:
  ${shlibs:Depends}, ${misc:Depends}
