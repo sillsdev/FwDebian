@@ -73,6 +73,15 @@ Description: A suite of programs to manage language and cultural data
  .
  For further information, please visit https://software.sil.org/fieldworks
 
+Package: fieldworks-l10n-az
+Architecture: all
+Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
+Description: FieldWorks user interface localization into Azerbaijani.
+ FieldWorks is a suite of software tools to help language development teams
+ manage language and cultural data, with support for complex scripts.
+ .
+ For further information, please visit https://software.sil.org/fieldworks
+
 Package: fieldworks-l10n-es
 Architecture: all
 Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
@@ -102,7 +111,7 @@ Description: FieldWorks user interface localization into French.
 
 Package: fieldworks-l10n-hi
 Architecture: all
-Depends: ${misc:Depends}, fonts-indic | ttf-devanagari-fonts, fieldworks-applications (= ${binary:Version})
+Depends: ${misc:Depends}, fonts-indic, fieldworks-applications (= ${binary:Version})
 Description: FieldWorks user interface localization into Hindi.
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
@@ -154,19 +163,19 @@ Description: FieldWorks user interface localization into Portuguese.
  .
  For further information, please visit https://software.sil.org/fieldworks
 
-Package: fieldworks-l10n-ro
+Package: fieldworks-l10n-ru
 Architecture: all
 Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
-Description: FieldWorks user interface localization into Romanian.
+Description: FieldWorks user interface localization into Russian.
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
  .
  For further information, please visit https://software.sil.org/fieldworks
 
-Package: fieldworks-l10n-ru
+Package: fieldworks-l10n-rw
 Architecture: all
 Depends: ${misc:Depends}, fieldworks-applications (= ${binary:Version})
-Description: FieldWorks user interface localization into Russian.
+Description: FieldWorks user interface localization into Kinyarwanda.
  FieldWorks is a suite of software tools to help language development teams
  manage language and cultural data, with support for complex scripts.
  .
