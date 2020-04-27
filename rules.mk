@@ -4,6 +4,8 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/makefile.mk
 
 BITS := $(shell test `arch` = x86_64 && echo 64 || echo 32)
+CC = $(shell which gcc-7 || which gcc)
+CXX = $(shell which g++-7 || which g++)
 
 DEB_SRCDIR = $(CURDIR)/fw
 
