@@ -19,5 +19,5 @@ DEB_MAKE_INSTALL_TARGET = install-package DESTDIR=$(DEB_DESTDIR)
 # don't run tests
 DEB_MAKE_CHECK_TARGET   =
 
-DEB_SHLIBDEPS_INCLUDE = /usr/lib/fieldworks:/usr/lib/fieldworks/lib
+DEB_SHLIBDEPS_INCLUDE = /usr/lib/fieldworks:/usr/lib/fieldworks/lib:/opt/mono5-sil/lib
 DEB_DH_SHLIBDEPS_ARGS_ALL := -X/usr/lib/fieldworks/Firefox-Linux$(BITS)/
