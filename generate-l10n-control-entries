@@ -22,15 +22,15 @@ cd "$FWROOT"
 
 # Customize the debian/control file and create any needed .install files
 # according to the available localization information.
-LOCALIZATIONS=$(ls Localizations/messages.*.po | sed 's/^.*messages\.\(.*\)\.po/\1/')
+LOCALIZATIONS=$(ls Localizations/l10ns/*/messages.*.po | sed 's/^.*messages\.\(.*\)\.po/\1/')
 for LOCALE in $LOCALIZATIONS; do
 	PACKAGETAG=${LOCALE,,}
 	# Get the language name from the ISO 639 data file
-	LANGUAGE=$(grep '\s'$LOCALE'\s' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
+	LANGUAGE=$(grep -P '\t'$LOCALE'\t' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
 	if [ "$LANGUAGE" = "" ]; then
 	   # Try stripping off any country, script, or variant codes
 	   LANGUAGE_TAG=$(echo $LOCALE | sed 's/-.*$//')
-	   LANGUAGE=$(grep '\s'$LANGUAGE_TAG'\s' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
+	   LANGUAGE=$(grep -P '\t'$LANGUAGE_TAG'\t' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
 	   if [ "$LANGUAGE" = "" ]; then
 		  # Assume we must have a 3-letter code.
 		  LANGUAGE=$(grep ^$LANGUAGE_TAG'\s' DistFiles/Ethnologue/iso-639-3_*.tab | cut -f7)
@@ -55,7 +55,7 @@ for LOCALE in $LOCALIZATIONS; do
 		 FieldWorks is a suite of software tools to help language development teams
 		 manage language and cultural data, with support for complex scripts.
 		 .
-		 For further information, please visit http://fieldworks.sil.org/
+		 For further information, please visit https://software.sil.org/fieldworks
 
 	EOF
 	cat >"$DEBIAN_PATH"/fieldworks-l10n-$PACKAGETAG.install <<-EOF

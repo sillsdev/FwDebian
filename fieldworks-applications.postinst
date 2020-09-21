@@ -22,7 +22,7 @@
 case "$1" in
 	configure)
 		db_get fieldworks/license/cpol-accepted
-		if [ $RET = true ]
+		if [ "$RET" = true ]
 		then
 			/usr/lib/fieldworks/cpol-action unpack || true
 		fi

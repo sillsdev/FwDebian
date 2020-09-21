@@ -4,6 +4,8 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/makefile.mk
 
 BITS := $(shell test `arch` = x86_64 && echo 64 || echo 32)
+CC = $(shell which gcc-7 || which gcc)
+CXX = $(shell which g++-7 || which g++)
 
 DEB_SRCDIR = $(CURDIR)/fw
 
@@ -17,7 +19,5 @@ DEB_MAKE_INSTALL_TARGET = install-package DESTDIR=$(DEB_DESTDIR)
 # don't run tests
 DEB_MAKE_CHECK_TARGET   =
 
-DEB_DH_STRIP_ARGS = -k
-DEB_SHLIBDEPS_INCLUDE = /usr/lib/fieldworks
-DEB_DH_MAKESHLIBS_ARGS_ALL = -X/usr/lib/fieldworks/
+DEB_SHLIBDEPS_INCLUDE = /usr/lib/fieldworks:/usr/lib/fieldworks/lib:/opt/mono5-sil/lib
 DEB_DH_SHLIBDEPS_ARGS_ALL := -X/usr/lib/fieldworks/Firefox-Linux$(BITS)/

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Tell environ that we're packaging
-export RUNMODE=PACKAGE
+export RUNMODE=PACKAGING
 
 case $1 in
 build*)	cd fw; source environ;       cd $OLDPWD;;

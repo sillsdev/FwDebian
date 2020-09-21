@@ -1,3 +1,15 @@
+fieldworks (9.0.4~beta) unstable; urgency=medium
+
+  * New release.
+
+ -- Raymond <flex_devteam@sil.org>  Fri, 07 Sep 2018 22:31:45 -0500
+
+fieldworks (9.0.2) unstable; urgency=medium
+
+  * Faster performance for large projects with many reversals.
+
+ -- Hasso <flex_devteam@sil.org>  Wed, 16 May 2018 17:23:14 +0000
+
 fieldworks (8.3.11) UNRELEASED; urgency=medium
 
   * New release.
