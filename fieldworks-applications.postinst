@@ -21,12 +21,6 @@
 
 case "$1" in
 	configure)
-		db_get fieldworks/license/cpol-accepted
-		if [ "$RET" = true ]
-		then
-			/usr/lib/fieldworks/cpol-action unpack || true
-		fi
-
 		addgroup --system --quiet fieldworks 2>/dev/null
 
 		db_get fieldworks/users/group-list
