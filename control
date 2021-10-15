@@ -19,6 +19,7 @@ Build-Depends:
  libenchant-dev,
  libxklavier-dev,
  docbook2x, gzip,
+ ca-certificates,
  wget,
  xsltproc,
  icu-dev-fw (>= 54.1),
