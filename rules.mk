@@ -14,8 +14,10 @@ DEB_MAKE_EXTRA_ARGS = BUILD_TYPE=r BUILD_CONFIG=Release
 
 # no need to run clean
 DEB_MAKE_CLEAN_TARGET	=
-DEB_MAKE_BUILD_TARGET   = Fw-build-package
-DEB_MAKE_INSTALL_TARGET = install-package DESTDIR=$(DEB_DESTDIR)
+# For build and install, use newer targets when available, or continue using the previous targets
+# if not.
+DEB_MAKE_BUILD_TARGET   = $(shell grep --quiet build-package-for-deb $(DEB_SRCDIR)/Makefile && echo build-package-for-deb || echo Fw-build-package)
+DEB_MAKE_INSTALL_TARGET = $(shell grep --quiet install-for-deb $(DEB_SRCDIR)/Makefile && echo install-for-deb || echo install-package) DESTDIR=$(DEB_DESTDIR)
 # don't run tests
 DEB_MAKE_CHECK_TARGET   =
 
