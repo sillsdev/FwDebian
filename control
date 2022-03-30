@@ -24,6 +24,7 @@ Build-Depends:
  ca-certificates,
  wget,
  xsltproc,
+ icu-fw (>= 70.1),
  icu-dev-fw (>= 70.1),
  fieldworks-enc-converters
 Standards-Version: 3.9.5
