@@ -24,7 +24,7 @@ Build-Depends:
  ca-certificates,
  wget,
  xsltproc,
- icu-dev-fw (>= 54.1),
+ icu-dev-fw (>= 70.1),
  fieldworks-enc-converters
 Standards-Version: 3.9.5
 Homepage: https://software.sil.org/fieldworks
@@ -50,7 +50,7 @@ Depends:
  ttf-mscorefonts-installer,
  ttf-ancient-fonts,
  pso-keys,
- icu-fw (>= 54.1),
+ icu-fw (>= 70.1),
  flexbridge (>= 3.0),
  fieldworks-enc-converters (>= 4.0.4)
 Conflicts:
